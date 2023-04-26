@@ -2,6 +2,6 @@
 
 @section('content')
     <div class="container">
-        edit
+        {{ $project->nome_progetto }} edit
     </div>
 @endsection

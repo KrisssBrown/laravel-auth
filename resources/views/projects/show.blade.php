@@ -2,6 +2,6 @@
 
 @section('content')
     <div class="container">
-        show
+        {{ $project->nome_progetto }}
     </div>
 @endsection

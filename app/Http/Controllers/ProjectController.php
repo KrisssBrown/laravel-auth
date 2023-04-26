@@ -49,7 +49,11 @@ class ProjectController extends Controller
      */
     public function show(Project $project)
     {
-        return view('projects.show', compact('project'));
+        $data = [
+            'project' => $project
+        ];
+
+        return view('projects.show', $data );
     }
 
     /**
@@ -60,7 +64,11 @@ class ProjectController extends Controller
      */
     public function edit(Project $project)
     {
-        return view('projects.edit', compact('project'));
+        $data = [
+            'project' => $project
+        ];
+
+        return view('projects.edit', $data);
     }
 
     /**
